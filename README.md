@@ -44,7 +44,7 @@ An Open-Source Music Player App for all your needs!
 
 ## Features
 
-- High Streaming Quality (320kbps AAC)
+- Best Streaming Quality (320kbps aac)
 - Song, Album, Artist and Playlist Search
 - Language Specific Promoted Playlists
 - Trending Songs

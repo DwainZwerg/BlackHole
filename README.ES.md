@@ -41,7 +41,7 @@ Gracias a [Euri](https://github.com/EuriNaiz) por esta traducción
 
 ## Características
 
-* La alta calidad de streaming (320kbps AAC)
+* La mejor calidad de streaming (320kbps)
 * Búsqueda por álbum y por canción
 * Música en tendencias
 * Soporte a +15 idiomas (En la música)

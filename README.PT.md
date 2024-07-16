@@ -42,7 +42,7 @@ Obrigado à [Lucas](https://github.com/LucasPJS) e [LuanRT](https://github.com/L
 
 ## Features
 
-* Alta qualidade de streaming(320kbps AAC)
+* Ótima qualidade de streaming (320kbps aac)
 * Busca por música, album, artista e playlists
 * Playlists em alta em idiomas específicos
 * Músicas populares
