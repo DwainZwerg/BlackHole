@@ -143,7 +143,7 @@ class Lyrics {
     final Response res =
         await get(lyricsUrl, headers: {'Accept': 'application/json'});
     if (res.statusCode == 200) {
-      final Map lyricsData = await json.decode(res.body) as Map;
+      final Map lyricsData = await jsonDecode(utf8.decode(res.bodyBytes)) as Map;
       if (lyricsData['error'] == null) {
         if (lyricsData['syncedLyrics'] != null &&
             lyricsData['syncedLyrics'] != '') {
