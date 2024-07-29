@@ -97,7 +97,7 @@ class SpotifyApi {
       final response = await post(path, headers: headers, body: body);
 
       if (response.statusCode == 200) {
-        final Map result = jsonDecode(response.body) as Map;
+        final Map result = jsonDecode(utf8.decode(res.bodyBytes)) as Map;
         return <String>[
           result['access_token'].toString(),
           result['refresh_token'].toString(),
@@ -129,7 +129,7 @@ class SpotifyApi {
       );
 
       if (response.statusCode == 200) {
-        final Map result = jsonDecode(response.body) as Map;
+        final Map result = jsonDecode(utf8.decode(res.bodyBytes)) as Map;
         return result;
       } else {
         Logger.root.severe(
@@ -156,7 +156,7 @@ class SpotifyApi {
         },
       );
       if (response.statusCode == 200) {
-        final result = jsonDecode(response.body);
+        final result = jsonDecode(utf8.decode(res.bodyBytes));
         final List playlists = result['items'] as List;
         return playlists;
       } else {
@@ -222,7 +222,7 @@ class SpotifyApi {
       );
 
       if (response.statusCode == 200) {
-        final result = await jsonDecode(response.body);
+        final result = await jsonDecode(utf8.decode(res.bodyBytes));
         final List tracks = result['items'] as List;
         final int total = result['total'] as int;
         return {'tracks': tracks, 'total': total};
@@ -231,7 +231,7 @@ class SpotifyApi {
           'Error in getHundredTracksOfPlaylist, called: $path, returned: ${response.statusCode}',
           response.body,
         );
-        final jsonRes = jsonDecode(response.body);
+        final jsonRes = jsonDecode(utf8.decode(res.bodyBytes));
         final errorMsg =
             jsonRes['error']['message'] ??= 'Error in getting tracks';
         return {'error': errorMsg};
@@ -261,7 +261,7 @@ class SpotifyApi {
     );
 
     if (response.statusCode == 200) {
-      final result = jsonDecode(response.body) as Map;
+      final result = jsonDecode(utf8.decode(res.bodyBytes)) as Map;
       return result;
     } else {
       Logger.root.severe(
@@ -285,7 +285,7 @@ class SpotifyApi {
     );
 
     if (response.statusCode == 200) {
-      final result = jsonDecode(response.body) as Map;
+      final result = jsonDecode(utf8.decode(res.bodyBytes)) as Map;
       return result;
     } else {
       Logger.root.severe(
@@ -310,7 +310,7 @@ class SpotifyApi {
       );
       final List<Map> songsData = [];
       if (response.statusCode == 200) {
-        final result = jsonDecode(response.body);
+        final result = jsonDecode(utf8.decode(res.bodyBytes));
         await for (final element in result['playlists']['items'] as Stream) {
           songsData.add({
             'name': element['name'],
