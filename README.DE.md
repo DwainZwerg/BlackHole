@@ -16,16 +16,16 @@ Ein Open-Source-Musik-Player für alle Fälle!
 
 [<img src="get_website.png"
      alt="Lade ihn von der Website runter."
-     height="90">](https://sangwan5688.github.io/download/)
+     height="90">](https://github.com/Ankit-Sangwaan/BlackHole?tab=readme-ov-file#download)
 [<img src="get_github.png"
      alt="Download from GitHub"
-     height="90">](https://github.com/Sangwan5688/BlackHole/releases)
+     height="90">](https://github.com/DwainZwerg/BlackHole/releases/)
 [<img src="get_telegram.png"
      alt="Trete dem Telegram-Channel bei, um Updates zu erhalten."
-     height="90">](https://t.me/blackhole_official)
+     height="90">](https://t.me/blackholenewupdates)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Lade ihn aus F-Droid"
-     height="90">](https://f-droid.org/packages/com.shadow.blackhole/)
+     height="90">](https://f-droid.org/archive?fingerprint=43238D512C1E5EB2D6569F4A3AFBF5523418B82E0A3ED1552770ABB9A9C9CCAB&appId=com.shadow.blackhole)
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
      alt="Lade ihn von IzzyDroid"
      height="90">](https://android.izzysoft.de/repo/apk/com.shadow.blackhole)
